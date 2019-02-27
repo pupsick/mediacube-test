@@ -64,7 +64,7 @@
                     name: "",
                     surname: "",
                     patronymic: "",
-                    gender: 1,
+                    gender: 0,
                     salary: 0,
                     departments: []
                 },
