@@ -25,8 +25,8 @@
                 <label class="col-sm-2 col-form-label">Пол</label>
                 <div class="col-sm-5">
                     <select v-model="model.gender">
-                        <option value="1">М</option>
-                        <option value="2">Ж</option>
+                        <option value="0">М</option>
+                        <option value="1">Ж</option>
                     </select>
                 </div>
             </div>
