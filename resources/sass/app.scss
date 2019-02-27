@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'messenger';
+//@import 'messenger-theme';
+@import 'messenger-theme-air';
+
+body {
+  padding-top: 5rem;
+}
+
+.green {
+  color: $green;
+}
+
+.red {
+  color: $red;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+a.item-controls i.material-icons:hover {
+  opacity: 0.5;
+  transition: 0.1s ease;
+}
+
+table.employees td:nth-child(6), table.employees th:nth-child(6) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
