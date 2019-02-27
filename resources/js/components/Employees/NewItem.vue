@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="form-controls mt-4">
-                <button type="submit" @click.prevent="createModel" class="btn btn-primary">Добавить</button>
+                <button :disabled="departments.length == 0" type="submit" @click.prevent="createModel" class="btn btn-primary">Добавить</button>
             </div>
         </form>
     </div>

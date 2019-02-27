@@ -25,15 +25,15 @@ class CoreController extends Controller
 
     public function loadEmployees($page = 1)
     {
-        $employees = Employee::with("departments.department")->paginate(1, ["*"], "page", $page);
-        foreach ($employees as &$employee)
-        {
+        $employees = Employee::with("departments.department")->paginate(10, ["*"], "page", $page);
+        foreach ($employees as &$employee) {
             $employee->departments_id = $employee->departments->pluck("department.id")->toArray();
         }
         return $employees;
     }
 
-    public function mainPageData() {
+    public function mainPageData()
+    {
 
         $departments = Department::all();
         return [

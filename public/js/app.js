@@ -38700,7 +38700,7 @@ var render = function() {
           "button",
           {
             staticClass: "btn btn-primary",
-            attrs: { type: "submit" },
+            attrs: { disabled: _vm.departments.length == 0, type: "submit" },
             on: {
               click: function($event) {
                 $event.preventDefault()
